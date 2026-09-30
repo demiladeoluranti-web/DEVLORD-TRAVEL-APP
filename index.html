@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Devlord Travel - Explore, book and experience amazing destinations around the world." />
+  <title>Devlord Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+<nav class="navbar container">
+<a href="#home" class="brand">
+<span class="brand-icon">✈</span>
+<span>
+<strong>Devlord <em>Travel</em></strong>
+<small>Explore • Book • Experience</small>
+</span>
+</a>
+<button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+<div class="nav-links" id="navLinks">
+<a class="active" href="#home">Home</a>
+<a href="#destinations">Destinations</a>
+<a href="#hotels">Hotels</a>
+<a href="#flights">Flights</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+<div class="nav-actions">
+<button class="icon-btn" aria-label="Search">⌕</button>
+<button class="login-btn">Login</button>
+<button class="primary-btn small">Sign Up</button>
+</div>
+</nav>
+</header>
+<main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow">✈ Your Next Adventure Awaits</span>
+        <h1>Discover Amazing<br />Places <span>Around the World</span></h1>
+        <p>Book flights, hotels and vacation packages at the best prices.<br />Your dream destination is just a few clicks away!</p>
+      </div>
+
+      <div class="booking-wrap container" id="flights">
+        <div class="booking-card">
+          <div class="booking-tabs">
+            <button class="tab active" data-tab="flights">✈ Flights</button>
+            <button class="tab" data-tab="hotels">▰ Hotels</button>
+            <button class="tab" data-tab="packages">🎁 Packages</button>
+            <button class="tab" data-tab="cars">🚗 Car Rental</button>
+          </div>
+
+          <form id="searchForm" class="search-form">
+            <label>
+              <span>From</span>
+              <div class="field">📍 <input id="fromInput" type="text" placeholder="Departure city" required /></div>
+            </label>
+
+            <label>
+              <span>To</span>
+              <div class="field">📍 <input id="toInput" type="text" placeholder="Destination city" required /></div>
+            </label>
+
+            <label>
+              <span>Check In</span>
+              <div class="field">📅 <input id="checkIn" type="date" required /></div>
+            </label>
+
+            <label>
+              <span>Check Out</span>
+              <div class="field">📅 <input id="checkOut" type="date" required /></div>
+            </label>
+
+            <label>
+              <span>Guests</span>
+              <div class="field">👥
+                <select id="guests">
+                  <option>1 Guest</option>
+                  <option>2 Guests</option>
+                  <option>3 Guests</option>
+                  <option>4 Guests</option>
+                  <option>5+ Guests</option>
+                </select>
+              </div>
+            </label>
+
+            <button class="primary-btn search-btn" type="submit">⌕ Search <span id="searchType">Flights</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefit-grid">
+        <article class="benefit">
+          <div class="benefit-icon">🛡️</div>
+          <div><h3>Secure Booking</h3><p>Your information is always safe with us.</p></div>
+        </article>
+        <article class="benefit">
+          <div class="benefit-icon">🏷️</div>
+          <div><h3>Best Price Guarantee</h3><p>Get the best deals on flights, hotels and more.</p></div>
+        </article>
+        <article class="benefit">
+          <div class="benefit-icon">🎧</div>
+          <div><h3>24/7 Support</h3><p>We’re here to help, anytime, anywhere.</p></div>
+        </article>
+        <article class="benefit">
+          <div class="benefit-icon">🌐</div>
+          <div><h3>Global Destinations</h3><p>Explore over 100+ countries and cities.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section destinations" id="destinations">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">POPULAR DESTINATIONS</span>
+            <h2>Top Destinations</h2>
+          </div>
+          <a href="#" class="view-link">View All Destinations →</a>
+        </div>
+
+        <div class="destination-grid">
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1577948000111-9c970dfe3743?auto=format&fit=crop&w=900&q=80" alt="Lagos city" />
+            <div class="card-shade"></div>
+            <div class="card-info">
+              <h3>Lagos, Nigeria</h3>
+              <p>Vibrant city, rich culture</p>
+              <div><strong>From ₦150,000</strong><button>→</button></div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Dubai skyline" />
+            <div class="card-shade"></div>
+            <div class="card-info">
+              <h3>Dubai, UAE</h3>
+              <p>Modern city, endless luxury</p>
+              <div><strong>From $450</strong><button>→</button></div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80" alt="London" />
+            <div class="card-shade"></div>
+            <div class="card-info">
+              <h3>London, UK</h3>
+              <p>History, culture, adventure</p>
+              <div><strong>From $620</strong><button>→</button></div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80" alt="Paris" />
+            <div class="card-shade"></div>
+            <div class="card-info">
+              <h3>Paris, France</h3>
+              <p>Iconic sights and culture</p>
+              <div><strong>From $580</strong><button>→</button></div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80" alt="Bali" />
+            <div class="card-shade"></div>
+            <div class="card-info">
+              <h3>Bali, Indonesia</h3>
+              <p>Paradise on earth</p>
+              <div><strong>From $520</strong><button>→</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hotels" id="hotels">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">STAY IN COMFORT</span>
+            <h2>Featured Hotels</h2>
+          </div>
+        </div>
+
+        <div class="hotel-grid">
+          <article class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Luxury resort">
+            <div class="hotel-body"><h3>Ocean Pearl Resort</h3><p>Beachfront rooms • Breakfast included</p><strong>From $180/night</strong></div>
+          </article>
+          <article class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80" alt="Modern hotel">
+            <div class="hotel-body"><h3>Skyline Grand Hotel</h3><p>City center • Rooftop pool</p><strong>From $210/night</strong></div>
+          </article>
+          <article class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" alt="Hotel suite">
+            <div class="hotel-body"><h3>Azure Suites</h3><p>Modern suites • Airport pickup</p><strong>From $160/night</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-it-works" id="about">
+      <div class="container how-grid">
+        <div class="how-copy">
+          <span class="section-kicker">HOW IT WORKS</span>
+          <h2>Book Your Dream Trip<br />in <span>4 Easy Steps</span></h2>
+<p>From searching to booking, we make it simple, safe and stress-free. Get ready for your next adventure!</p>
+<a class="primary-btn inline-btn" href="#destinations">Start Exploring →</a>
+</div>
+
+  <div class="step-grid">
+  <article class="step-card"><span>1</span><div class="step-icon">⌕</div><h3>Search</h3><p>Find the best flights, hotels and packages.</p></article>
+  <article class="step-card"><span>2</span><div class="step-icon">📅</div><h3>Select</h3><p>Choose your preferred dates and options.</p></article>
+  <article class="step-card"><span>3</span><div class="step-icon">💳</div><h3>Book</h3><p>Make a secure payment in minutes.</p></article>
+  <article class="step-card"><span>4</span><div class="step-icon">✈</div><h3>Travel</h3><p>Get your confirmation and enjoy your trip!</p></article>
+  </div>
+  </div>
+  </section>
+  </main>
+
+  <footer id="contact">
+  <div class="footer-bg"></div>
+  <div class="container footer-content">
+  <a href="#home" class="brand footer-brand">
+  <span class="brand-icon">✈</span>
+  <span><strong>Devlord <em>Travel</em></strong></span>
+  </a>
+  <div class="footer-message"><strong>More Than a Trip...</strong><span>It's a Story You'll Tell Forever.</span></div>
+  <a href="#destinations" class="footer-btn">Explore Now →</a>
+  </div>
+  <div class="copyright">© 2026 Devlord Travel.</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
